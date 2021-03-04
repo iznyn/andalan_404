@@ -1,0 +1,62 @@
+//
+// Header styles
+//
+.header
+  +por
+  +pt(50px)
+  +tac
+
+  &--inner
+    +por
+
+    ul
+      +list-reset
+
+      li
+        +p0
+        +dib
+        +mx(30px)
+
+        @media (max-width: 480px)
+          +mx(14px)
+
+      a
+        +dib
+        +transition(all 0.6s)
+        +por
+        +py(8px)
+        +td0
+        +c0
+
+        &:after
+          content: ''
+          +poa
+          +l0
+          +r0
+          +b0
+          +h(2px)
+          +bgc(#ef3648)
+          +transition(all 0.6s)
+          +w0
+
+        &:hover, &._active
+          &:after
+            +wf
+
+    @media (max-width: 480px)
+      +bgc(#ef3648)
+      +maxw(80%)
+      +mxa
+      +rad(8px)
+
+      ul
+        li
+          a
+            +cf
+
+            &:after
+              +h(4px)
+              +bgc(#fdff03)
+
+            &:hover, &._active
+              +c(#fdff03)
