@@ -1,0 +1,21 @@
+//-
+//- Article detail
+//-
+extends ../layouts/master
+
+block vars
+  - var pageTitle     = 'Article detail - Andalan Mama';
+  - var pageName      = 'article';
+  - var bodyClass     = 'article';
+
+block main
+  .article__main
+    .article__deco
+      img.article__deco__left(src="images/article/decoLeft.png" alt="")
+      img.article__deco__right(src="images/article/decoRight.png" alt="")
+
+    .article__logo
+      img(src="images/logo.png" alt="")
+
+    include ./article/content
+    include ./article/others
