@@ -2353,7 +2353,8 @@ button.close {
 .header {
   position: relative;
   padding-top: 50px;
-  text-align: center; }
+  text-align: center;
+  z-index: 9; }
   .header--inner {
     position: relative; }
     .header--inner ul {
