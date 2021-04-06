@@ -1,0 +1,22 @@
+//-
+//- Recipe detail
+//-
+extends ../layouts/master
+
+block vars
+  - var pageTitle     = 'Recipe detail - Andalan Mama';
+  - var pageName      = 'recipe';
+  - var bodyClass     = 'recipe';
+
+block main
+  .recipe__main
+    .recipe__deco
+      img.recipe__deco__left(src="images/recipe/decoLeft.png" alt="")
+      img.recipe__deco__right(src="images/recipe/decoRight.png" alt="")
+
+    .recipe__content
+      .container
+        include ./recipe/detail
+      include ./recipe/ingredient
+      include ./recipe/steps
+      include ./recipe/others

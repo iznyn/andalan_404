@@ -3,9 +3,12 @@ module.exports = function(grunt)
   'use strict';
 
   var script_lib = [
+    './node_modules/jquery/dist/jquery.js',
+    './node_modules/slick-carousel/slick/slick.js',
   ];
 
   var style_lib = [
+    './node_modules/slick-carousel/slick/slick.css',
   ];
 
   var convertToBlade = false;

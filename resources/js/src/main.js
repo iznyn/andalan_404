@@ -1,15 +1,15 @@
 //
 // Main JS
 //
-import HomeLib from '../libs/Home';
+import RecipeLib from '../libs/Recipe';
 
 (function ($) {
   "use strict";
 
   $(document).ready(function ()
   {
-    // Home
-    new HomeLib().init();
+    // Recipe
+    new RecipeLib().init();
   });
 
 })(jQuery);
